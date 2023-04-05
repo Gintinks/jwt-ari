@@ -18,12 +18,12 @@ body {
 }
 
 .App {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh; 
-  padding: 1rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem 0.5rem;
 }
 
 section {
@@ -34,7 +34,7 @@ section {
     flex-direction: column;
     justify-content: flex-start;
     padding: 1rem;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 form {
@@ -45,7 +45,8 @@ form {
     padding-bottom: 1rem;
 }
 
-a, a:visited {
+a,
+a:visited {
     color: #fff;
 }
 
@@ -53,19 +54,19 @@ input[type="text"],
 input[type="password"],
 button,
 textarea {
-  font-family: 'Nunito', sans-serif;
-  font-size: 22px;
-  padding: 0.25rem;
-  border-radius: 0.5rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
 }
 
 label,
 button {
-  margin-top: 1rem;
+    margin-top: 1rem;
 }
 
 button {
-  padding: 0.5rem;
+    padding: 0.5rem;
 }
 
 li {
@@ -82,7 +83,7 @@ li {
     bottom: -10px;
 }
 
-.instructions > svg {
+.instructions>svg {
     margin-right: 0.25rem;
 }
 
@@ -123,3 +124,58 @@ li {
     justify-content: flex-start;
     align-items: flex-end;
 }
+
+
+/* Table */
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td,
+#customers th {
+    font-size: smaller;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: dodgerblue;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #0008f9;
+    color: white;
+}
+
+/* End of table */
+
+/* Card */
+.card-center{
+    display: flex;
+    justify-content: center;
+    margin: 12px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 70%;
+  }
+
+  .card > img {
+    width: 100%;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container-card {
+    padding: 2px 16px;
+  }
+/* End of card */
